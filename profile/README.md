@@ -10,7 +10,7 @@ GitHub Actions by Gerard Braad
 ### Install Tailscale
 ```yaml
 - name: Tailscale
-  uses: gbraad-actions/tailscale-action@v4
+  uses: gbraad-actions/tailscale-action@v1
   with:
     authkey: ${{ secrets.TAILSCALE_AUTHKEY }}
     args: --ssh --accept-dns=false --operator=runner
@@ -26,7 +26,7 @@ GitHub Actions by Gerard Braad
 ### Machinefile executor
 ```yaml
 - name: Run Machinefile commands
-  uses: gbraad-actions/machinefile-executor-action@v3
+  uses: gbraad-actions/machinefile-executor-action@v4
   with:
     containerfile: 'Containerfile'
     context: '.'
