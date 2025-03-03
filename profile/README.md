@@ -10,7 +10,7 @@ GitHub Actions by Gerard Braad
 ### Install Tailscale
 ```yaml
 - name: Tailscale
-  uses: tailscale/github-action@v3
+  uses: gbraad-actions/tailscale-action@v4
   with:
     authkey: ${{ secrets.TAILSCALE_AUTHKEY }}
     args: --ssh --accept-dns=false --operator=runner
