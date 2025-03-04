@@ -23,6 +23,13 @@ GitHub Actions by Gerard Braad
   uses: gbraad-actions/code-tunnel-action@v1
 ```
 
+### Code serve web action
+```yaml
+- name: Code tunnel
+  if: ${{ failure() }}
+  uses: gbraad-actions/code-servewed-action@v1
+```
+
 ### Machinefile executor
 ```yaml
 - name: Run Machinefile commands
