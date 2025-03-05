@@ -7,7 +7,7 @@ GitHub Actions by Gerard Braad
   uses: gbraad-actions/remove-unwanted@v1
 ```
 
-### Install Tailscale
+### Install Tailscale using distro package manager and uses systemd
 ```yaml
 - name: Tailscale
   uses: gbraad-actions/tailscale-action@v1
