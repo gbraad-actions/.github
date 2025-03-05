@@ -1,7 +1,7 @@
 GitHub Actions by Gerard Braad
 ==============================
 
-### `remove-unwanted`
+### Remove unwanted to maximize diskspace
 ```yaml
 - name: Remove unwanted stuff
   uses: gbraad-actions/remove-unwanted@v1
