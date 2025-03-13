@@ -1,6 +1,19 @@
 GitHub Actions by Gerard Braad
 ==============================
 
+### Job container (Fedora 41) [⚙️](https://github.com/gbraad-actions/containers/actions) [![build container - fedora-multi-arch](https://github.com/gbraad-actions/containers/actions/workflows/build-container-fedora.yml/badge.svg)](https://github.com/gbraad-actions/containers/actions/workflows/build-container-fedora.yml)
+
+```yaml
+jobs:
+  build:
+    runs-on: [ubunu-24.04|ubunu-24.04-arm]
+    container: 
+      image: ghcr.io/gbraad-actions/fedora:stable
+      options: --privileged
+    steps:
+```
+
+
 ### Remove unwanted to maximize diskspace
 ```yaml
 - name: Remove unwanted stuff
@@ -37,4 +50,12 @@ GitHub Actions by Gerard Braad
   with:
     containerfile: 'Containerfile'
     context: '.'
+```
+
+### Cleanup registry
+```yaml
+- uses: gbraad-actions/cleanup-untagged-packages@main
+  with:
+    packages: fedora, centos, ...
+    token: ${{ secrets.PACKAGE_CLEANUP_TOKEN }}
 ```
