@@ -27,6 +27,10 @@ jobs:
   with:
     authkey: ${{ secrets.TAILSCALE_AUTHKEY }}
     args: --ssh --accept-dns=false --operator=runner
+- ...
+- name: Hang around
+  if: ${{ failure() }}
+  run: sleep infinity  # this allows you to access the runner over SSH/Tailnet
 ```
 
 ### Code tunnel action
