@@ -52,7 +52,7 @@ jobs:
     context: '.'
 ```
 
-### Cleanup registry
+### Cleanup registry - [Example](https://github.com/gbraad-dotfiles/.github/blob/main/.github/workflows/cleanup.yml)
 ```yaml
 - uses: gbraad-actions/cleanup-untagged-packages@main
   with:
