@@ -20,7 +20,7 @@ jobs:
   uses: gbraad-actions/remove-unwanted@v1
 ```
 
-### Install Tailscale using distro package manager and uses systemd
+### Install Tailscale using distro package manager and uses systemd - [Example](https://github.com/gbraad-redhat/simple-go-server/blob/main/.github/workflows/crc_linux.yaml)
 ```yaml
 - name: Tailscale
   uses: gbraad-actions/tailscale-action@v1
