@@ -32,6 +32,21 @@ jobs:
   run: sleep infinity  # this allows you to access the runner over SSH/Tailnet
 ```
 
+### Start Tailscale when preinstalled in (container) image
+```yaml
+jobs:
+  build:
+    runs-on: ... # [ubunu-24.04|ubunu-24.04-arm]
+    container: 
+      image: ghcr.io/gbraad-actions/fedora:stable
+      options: --privileged
+    steps:
+      - name: Tailscale Action
+        uses: gbraad-actions/start-tailscale@v1
+        with:
+          authkey: ${{ secrets.TAILSCALE_AUTHKEY }}
+```
+
 ### Code tunnel action
 ```yaml
 - name: Code tunnel
