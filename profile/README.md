@@ -1,7 +1,7 @@
 GitHub Actions by Gerard Braad
 ==============================
 
-### Job container (Fedora 41) [⚙️](https://github.com/gbraad-actions/containers/actions) [![build container - fedora-multi-arch](https://github.com/gbraad-actions/containers/actions/workflows/build-container-fedora.yml/badge.svg)](https://github.com/gbraad-actions/containers/actions/workflows/build-container-fedora.yml)
+### Job container (Fedora 41) [⚙️](https://github.com/gbraad-actions/containers/actions) [![build container - fedora-multi-arch](https://github.com/gbraad-actions/containers/actions/workflows/build-container-fedora.yml/badge.svg)](https://github.com/gbraad-actions/containers/actions/workflows/build-container-fedora.yml) - [Example](https://github.com/gbraad-devenv/alt-machine-os/blob/1639c82320feb3f1bdf2fb4b61b049c2a1b3ccff/.github/workflows/build-process.yml#L109-L111)
 
 ```yaml
 jobs:
@@ -12,7 +12,6 @@ jobs:
       options: --privileged
     steps:
 ```
-
 
 ### Remove unwanted to maximize diskspace
 ```yaml
