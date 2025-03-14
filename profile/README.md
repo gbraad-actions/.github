@@ -7,6 +7,7 @@ This organization contains Actions and container definitions that are used for t
   - [gbraad-dotfiles/upstream](https://github.com/dotfiles/uptream) in the org [gbraad-dotfiles](https://github.com/gbraad-dotfiles)
   - All projects in [gbraad-devenv](https://github.com/gbraad-devenv)
   - All projects in [gbraad-homelab](https://github.com/gbraad-homelab)
+  - All projects in [gbraad-apps](https://github.com/gbraad-apps)
   - ...
 
 
