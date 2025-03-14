@@ -97,7 +97,7 @@ jobs:
 ```yaml
     runs-on: ... # [ubunu-24.04|ubunu-24.04-arm]
     container: 
-      image: ghcr.io/gbraad-actions/fedora:stable
-
+      image: ghcr.io/gbraad-actions/centos:stable
+      options: --privileged
 ```
 
