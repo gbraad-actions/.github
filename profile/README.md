@@ -1,5 +1,5 @@
-GitHub Actions by Gerard Braad
-==============================
+GitHub Actions related repositories
+===================================
 
 
 ### Remove unwanted to maximize diskspace
