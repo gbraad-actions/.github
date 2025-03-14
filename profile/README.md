@@ -76,6 +76,12 @@ jobs:
   uses: gbraad-actions/setup-virtualization@v1
 ```
 
+### Setup container tools
+```yaml
+- name: Install containers tools
+  uses: gbraad-actions/setup-container-tools@v1
+```
+
 ### Cleanup registry - [Example](https://github.com/gbraad-dotfiles/.github/blob/main/.github/workflows/cleanup.yml)
 ```yaml
 - uses: gbraad-actions/cleanup-untagged-packages@main
