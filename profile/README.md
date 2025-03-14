@@ -1,17 +1,6 @@
 GitHub Actions by Gerard Braad
 ==============================
 
-### Job container (Fedora 41) [⚙️](https://github.com/gbraad-actions/containers/actions) [![build container - fedora-multi-arch](https://github.com/gbraad-actions/containers/actions/workflows/build-container-fedora.yml/badge.svg)](https://github.com/gbraad-actions/containers/actions/workflows/build-container-fedora.yml) - [Example](https://github.com/gbraad-devenv/alt-machine-os/blob/1639c82320feb3f1bdf2fb4b61b049c2a1b3ccff/.github/workflows/build-process.yml#L109-L111)
-
-```yaml
-jobs:
-  build:
-    runs-on: ... # [ubunu-24.04|ubunu-24.04-arm]
-    container: 
-      image: ghcr.io/gbraad-actions/fedora:stable
-      options: --privileged
-    steps:
-```
 
 ### Remove unwanted to maximize diskspace
 ```yaml
@@ -89,3 +78,26 @@ jobs:
     packages: fedora, centos, ...
     token: ${{ secrets.PACKAGE_CLEANUP_TOKEN }}
 ```
+
+----
+
+## Job containers [⚙️](https://github.com/gbraad-actions/containers/actions)
+
+#### Fedora 41 [![build container - fedora-multi-arch](https://github.com/gbraad-actions/containers/actions/workflows/build-container-fedora.yml/badge.svg)](https://github.com/gbraad-actions/containers/actions/workflows/build-container-fedora.yml) - [Example](https://github.com/gbraad-devenv/alt-machine-os/blob/1639c82320feb3f1bdf2fb4b61b049c2a1b3ccff/.github/workflows/build-process.yml#L109-L111)
+
+```yaml
+    runs-on: ... # [ubunu-24.04|ubunu-24.04-arm]
+    container: 
+      image: ghcr.io/gbraad-actions/fedora:stable
+      options: --privileged
+```
+
+#### CentOS Stream9 [![build container - centos-multi-arch](https://github.com/gbraad-actions/containers/actions/workflows/build-container-centos.yml/badge.svg)](https://github.com/gbraad-actions/containers/actions/workflows/build-container-centos.yml)
+
+```yaml
+    runs-on: ... # [ubunu-24.04|ubunu-24.04-arm]
+    container: 
+      image: ghcr.io/gbraad-actions/fedora:stable
+
+```
+
