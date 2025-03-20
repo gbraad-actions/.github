@@ -1,5 +1,5 @@
-GitHub Actions related repositories
-===================================
+Actions related repositories
+============================
 
 
 This organization contains Actions and container definitions that are used for the projects and organizations like:
