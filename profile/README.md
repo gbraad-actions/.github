@@ -17,6 +17,20 @@ This organization contains Actions and container definitions that are used for t
   uses: gbraad-actions/remove-unwanted@v1
 ```
 
+### [Shared configuration](https://github.com/gbraad-actions/shared-config) - [Example](https://github.com/gbraad/shared-config/blob/master/.github/workflows/test.yml)
+```yaml
+- name: Fetch configuration
+  uses: gbraad-actions/shared-config@v1
+  with:
+    config_repo: https://github.com/gbraad/shared-config.git
+    config_file: fedora.ini
+
+- name: Use base settings
+  run: |
+    echo "Using base version $BASE_VERSION"
+    echo "Using base image $BASE_IMAGE"
+```
+
 ### [Install Tailscale using distro package manager and uses systemd](https://github.com/gbraad-actions/tailscale-action) - [Example](https://github.com/gbraad-redhat/simple-go-server/blob/main/.github/workflows/crc_linux.yaml)
 ```yaml
 - name: Tailscale
