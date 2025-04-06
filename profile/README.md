@@ -59,6 +59,13 @@ jobs:
           authkey: ${{ secrets.TAILSCALE_AUTHKEY }}
 ```
 
+### [Codium Server action](https://github.com/gbraad-actions/codium-server-action)
+```yaml
+- name: Codium Server
+  if: ${{ failure() }}
+  uses: gbraad-actions/codium-server-action@v1
+```
+
 ### [Code tunnel action](https://github.com/gbraad-actions/code-tunnel-action)
 ```yaml
 - name: Code tunnel
