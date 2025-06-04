@@ -8,6 +8,7 @@ This organization contains Actions and container definitions that are used for t
   - All projects in [gbraad-devenv](https://github.com/gbraad-devenv)
   - All projects in [gbraad-homelab](https://github.com/gbraad-homelab)
   - All projects in [gbraad-apps](https://github.com/gbraad-apps)
+  - All projects in [gbraad-redhat](https://github.com/gbraad-redhat)
   - ...
 
 
