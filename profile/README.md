@@ -103,6 +103,12 @@ jobs:
   uses: gbraad-actions/setup-container-tools@v1
 ```
 
+### [Setup Ansible](https://github.com/gbraad-actions/setup-ansible)
+```yaml
+- name: Install Ansible
+  uses: gbraad-actions/setup-ansible@v1
+```
+
 ### [Cleanup registry](https://github.com/gbraad-actions/cleanup-untagged-packages) - [Example](https://github.com/gbraad-dotfiles/.github/blob/main/.github/workflows/cleanup.yml)
 ```yaml
 - uses: gbraad-actions/cleanup-untagged-packages@main
